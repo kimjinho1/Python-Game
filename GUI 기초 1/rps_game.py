@@ -4,6 +4,15 @@ import random
 from PIL import ImageTk
 import os
 
+
+# PyInstaller에 의해 임시폴더에서 실행될 경우 임시폴더로 접근하는 함수
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 def click_btn(user_choice):
     # 가위, 바위, 보 중 랜덤으로 하나 선택하고 com_rps_label에 출력
     computer_choice = random.choice(["가위", "바위", "보"])
@@ -38,10 +47,9 @@ if __name__ == "__main__":
     # 이미지 파일에 따라 tkinter.PhotoImage가 잘 작동하지 않는 것 같다.
     # ImageTk.PhotoImage 명령을 대신 사용했다.
     # gazou = tkinter.PhotoImage(file="alphago.png")
-    img = os.path.abspath('alphago.png')
-    gazou = ImageTk.PhotoImage(file=img)
+    gazou = ImageTk.PhotoImage(file=resource_path("alphago.png"))
     canvas.create_image(400, 240, image=gazou)
-
+    
     # 컴퓨터, 사용자 라벨
     com_label = tkinter.Label(root, text="컴퓨터", font=("Times New Roman", 55),
                             bg="white")
