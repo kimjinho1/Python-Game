@@ -10,5 +10,10 @@ pyinstaller -w -F --add-data "alphago.png;." -i "icon.ico" rps_game.py
 
 
 ## GUI 기초 2
+- **tkinter(Entry, Text, Checkbutton, messagebox)**    
+- **진단 게임 구현**  
+```
+pyinstaller -w -F --add-data "mina.png;." neko_test.py
+```
 
 
