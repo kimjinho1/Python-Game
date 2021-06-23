@@ -1,6 +1,7 @@
 # Python_Game
 
-![코드 설명 블로그](https://jinho-study.tistory.com/category/Python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B2%8C%EC%9E%84%20%EA%B0%9C%EB%B0%9C)
+[코드 설명 블로그](https://jinho-study.tistory.com/category/Python/%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B2%8C%EC%9E%84%20%EA%B0%9C%EB%B0%9C)  
+
 
 ## GUI 기초 1
 - **tkinter(window, label, button, canvas)**    
