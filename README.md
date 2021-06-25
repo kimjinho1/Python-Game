@@ -6,8 +6,7 @@
 ## GUI 기초 1
 - **tkinter(window, label, button, canvas)**    
 - **제비뽑기, 가위바위보 프로그램 구현**  
-
-pyinstaller로 내가 만든 게임 exe파일 생성
+- **pyinstaller로 내가 만든 게임 exe파일 생성**  
 ```
 pyinstaller -w -F --add-data "alphago.png;." -i "icon.ico" rps_game.py
 ```    
@@ -20,4 +19,9 @@ pyinstaller -w -F --add-data "alphago.png;." -i "icon.ico" rps_game.py
 pyinstaller -w -F --add-data "mina.png;." neko_test.py
 ```
 
+  
+## 기본적인 게임 개발 기술  
+- **실시간 처리, 키 입력 받기, 미로 게임**  
+```
+```   
 
