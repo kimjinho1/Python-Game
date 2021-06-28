@@ -21,7 +21,15 @@ pyinstaller -w -F --add-data "mina.png;." neko_test.py
 
   
 ## 기본적인 게임 개발 기술  
-- **실시간 처리, 키 입력 받기, 미로 게임**  
+- **실시간 처리, 키 입력 받기**  
+- **미로 게임 구현**  
 ```
+pyinstaller -w -F --add-data "mimi_s.png;." -i "mimi_s.ico" maze_game.py
 ```   
+
+
+## 
+
+```
+```
 
